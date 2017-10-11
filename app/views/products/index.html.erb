@@ -2,9 +2,11 @@
 
 <% @products.each do |product| %>
   <h2><%= product.name %></h2>
-  <p><%= product.description %></p>
   <p>
-    <strong>Price:</strong>
-    <%= number_to_currency product.price %>
+    <!-- Three different ways to link_to our product
+         from the most explicit to the most conventional. -->
+    <%= link_to 'Details', product_path(id: product.id) %>
+    <%= link_to 'Details', product_path(product) %>
+    <%= link_to 'Details', product %>
   </p>
 <% end %>
