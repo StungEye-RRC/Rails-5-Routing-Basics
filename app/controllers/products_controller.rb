@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def index
+    @products = Product.order(:name)
   end
   # After this action the associated view will
   # be automatically loaded and any instance
