@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'products/index'
+  get 'products', to: 'products#index', as: 'products'
+# ^verb  ^URI          ^controller  ^action    ^ refer: products_path
 
-  get 'products/show'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'products/:id', to: 'products#show', as: 'product'
+# ^verb  ^URI          ^controller  ^action    ^ refer: product_path
 end
