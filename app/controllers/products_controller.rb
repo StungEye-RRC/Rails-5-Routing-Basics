@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
   # app/views/products/index.html.erb
 
   def show
+    @product = Product.find(params[:id])
   end
   # app/views/products/show.html.erb
 end
