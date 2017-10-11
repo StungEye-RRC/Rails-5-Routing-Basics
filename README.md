@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The basics of collection and member routing with one model and one controller. 
 
-Things you may want to cover:
+Covers:
 
-* Ruby version
+* Generating a simple ActiveRecord model.
+* Using the db/seeds.rb file.
+* Generating a controller with associated actions and views.
+* Manual routing using the config/routes.rb file.
+* Loading model data in a controller.
+* Displaying controller data in a view using ERB.
+* Using the link_to helper with your routes.
+* Resources based routing.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Associated Video Tutorial on YouTube](https://youtu.be/3Sw1QwC3R7U)
